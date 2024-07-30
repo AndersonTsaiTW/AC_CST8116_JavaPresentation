@@ -14,7 +14,7 @@ public class MatrixOperationsV1 {
         return null; // Immediate return on error
       }
       for (int j = 0; j < cols; j++) {
-        matrix[i][j] = Double.parseDouble(rowInput[j]);
+        matrix[i][j] = Double.parseDouble(rowInput[j]); // store elements as double
       }
     }
     return matrix;
@@ -58,7 +58,7 @@ public class MatrixOperationsV1 {
       }
       System.out.println(); // Move to the next line after printing each row
     }
-    System.out.println();
+    System.out.println(); // one more line to separate matrixes
   }
 
   public static void main(String[] args) {
