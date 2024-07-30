@@ -5,7 +5,9 @@ public class MatrixOperationsV1 {
 
   public static double[][] getMatrixFromUser(int rows, int cols) {
     double[][] matrix = new double[rows][cols];
-    System.out.println("Please enter a " + rows + "x" + cols + " matrix, using spaces to separate elements:");
+    System.out
+        .println(
+            "Please enter a " + rows + "x" + cols + " matrix(Including constants), using spaces to separate elements:");
     for (int i = 0; i < rows; i++) {
       System.out.print("Input row " + (i + 1) + ": ");
       String[] rowInput = scanner.nextLine().split(" ");
@@ -17,6 +19,7 @@ public class MatrixOperationsV1 {
         matrix[i][j] = Double.parseDouble(rowInput[j]); // store elements as double
       }
     }
+    System.out.println();
     return matrix;
   }
 
@@ -62,7 +65,7 @@ public class MatrixOperationsV1 {
   }
 
   public static void main(String[] args) {
-    System.out.print("Enter the number of rows and columns (n and n+1): ");
+    System.out.print("Enter the number of paramater(n): ");
     int n = scanner.nextInt();
     scanner.nextLine(); // Consume the newline left-over
 
