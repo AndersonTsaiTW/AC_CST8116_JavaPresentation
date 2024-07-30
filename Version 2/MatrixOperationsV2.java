@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MatrixOperations {
+public class MatrixOperationsV2 {
   public static Scanner scanner = new Scanner(System.in);
 
   public static double[][] getMatrixFromUser(int rows, int cols) {
